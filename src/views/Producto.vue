@@ -32,3 +32,14 @@
   </section>
   </div>
   </template>
+
+  <script>
+  export default {
+    name: 'Producto'
+  }
+  </script>
+
+  <style lang="stylus" scoped>
+  
+  </style>
+  

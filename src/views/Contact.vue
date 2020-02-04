@@ -1,5 +1,18 @@
-import Navbar from '@/components/Navbar.vue';
 <template>
+    <div>
+        <section id="subintro">
+    <div class="jumbotron subhead" id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="centered">
+              <h3>Contacto</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="maincontent">
     <div class="container">
       <div class="row">
@@ -102,12 +115,15 @@ import Navbar from '@/components/Navbar.vue';
       </div>
     </div>
   </section>
+    </div>
 </template>
+
 <script>
-export default {
-    name: "About"
-}
+    export default {
+        name: 'Contact'
+    }
 </script>
-<style lang="stylus" scoped>
+
+<style lang="scss" scoped>
 
 </style>

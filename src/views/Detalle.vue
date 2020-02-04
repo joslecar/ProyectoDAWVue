@@ -60,7 +60,7 @@
 </template>
 <script>
 export default {
-    name: "detalle",
+    name: "Detalle",
     data(){
         return{
         imagProd:[
