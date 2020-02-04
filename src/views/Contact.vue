@@ -55,7 +55,7 @@
 
           <div id="sendmessage">Tu mensaje ha sido enviado, gracias!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="https://formspree.io/hyepez@espol.edu.ec" method="post" role="form" class="contactForm">
             <div class="row">
               <div class="span4 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4"
