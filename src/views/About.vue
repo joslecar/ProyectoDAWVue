@@ -1,5 +1,105 @@
+import Navbar from '@/components/Navbar.vue';
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section id="maincontent">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <aside>
+            <div class="widget">
+              <h4>Contáctanos a :</h4>
+              <ul>
+                <li><label><strong>Dirección : </strong></label>
+                    <p>Ciudadela Vernaza Norte MZ 25 Villa 16</p>
+                    <p>SYSCOMPSA S.A.</p>
+                    <p>EC090506 Guayaquil</p>
+                    <p>Ecuador</p>
+                </li>
+                <li><label><strong>Teléfono : </strong></label>
+                  <p>PBX:04-2924030</p> 
+                  <p>Celular: 0999427260</p>
+                </li>
+                <li><label><strong>Email : </strong></label>
+                  <p>lcarrion@syscompsa.com</p>
+                </li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h4>Nuestras redes sociales</h4>
+              <ul class="social-links">
+                <li><a href="#" title="Twitter"><i class="icon-rounded icon-32 icon-twitter"></i></a></li>
+                <li><a href="#" title="Facebook"><i class="icon-rounded icon-32 icon-facebook"></i></a></li>
+
+                <li><a href="#" title="Linkedin"><i class="icon-rounded icon-32 icon-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="span8">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7973.99619007945!2d-79.89422!3d-2.154411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x538ba9bfa28d699!2sSyscompsa%20S.A.!5e0!3m2!1sen!2sec!4v1572837681908!5m2!1sen!2sec" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+          <div class="spacer30"></div>
+          <h3>Contacte con nosotros</h3>
+
+          <div id="sendmessage">Tu mensaje ha sido enviado, gracias!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="row">
+              <div class="span4 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+
+              <div class="span4 form-group">
+                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+
+              <div class="span4 form-group">
+                <input type="text" name="telf" class="form-control" id="telef" placeholder="Teléfono" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+
+              <div class="span4 form-group">
+                <input type="text" name="fecha" class="form-control" id="fecha" placeholder="Fecha Nacimiento" onfocus="(this.type='date')" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+
+              <div class="span4 form-group">
+                <select>
+                 <option disabled selected>Lugar de Nacimiento</option>                  
+                 <option value="Guayaquil">Guayaquil</option>
+                 <option value="Quito">Quito</option>
+                 <option value="Milagro">Milagro</option>
+                </select>
+              </div>
+
+              <div class="span4 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email"
+                  data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="span8 form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4"
+                  data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="span8 form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                  placeholder="Mensaje"></textarea>
+                <div class="validation"></div>
+                <div class="text-center">
+                  <button class="btn btn-color btn-rounded" type="submit">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
