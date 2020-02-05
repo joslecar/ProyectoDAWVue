@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import "../assets/css/sequence.css";
 export default {
     name: 'Index',
     data(){

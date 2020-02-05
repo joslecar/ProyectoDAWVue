@@ -33,7 +33,7 @@ import settings from "./assets/js/sequence/setting.js";
 import prettyPhoto from "./assets/js/jquery.prettyPhoto.js";
 import application from "./assets/js/application.js";
 import jqueryhover from "./assets/js/hover/jquery-hover-effect.js";
-import intro from './assets/js/node_modules/intro.js';
+
 
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'

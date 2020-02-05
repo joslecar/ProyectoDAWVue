@@ -21,7 +21,9 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <a @click="login" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Iniciar Sesion</a>
+            <router-link to="/menulogin">
+                <a @click="login" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Iniciar Sesion</a>
+            </router-link>
         </form>
     </div>
 </template>

@@ -39,17 +39,32 @@ const routes = [{
     {
         path: '/contact',
         name: 'Contact',
-        component: () => import('../views/Contact.vue'),
+        component: () => import('../views/Contact.vue')
     },
     {
         path: '/noticias',
         name: 'Noticias',
-        component: () => import('../views/Noticias.vue'),
+        component: () => import('../views/Noticias.vue')
     },
     {
         path: '/equipo',
         name: 'Equipo',
-        component: () => import('../views/Equipo.vue'),
+        component: () => import('../views/Equipo.vue')
+    },
+    {
+        path: '/menulogin',
+        name: 'Menulogin',
+        component: () => import('../views/userviews/MenuLogin.vue')
+    },
+    {
+        path: '/reporte',
+        name: 'Reporte',
+        component: () => import('../views/userviews/Reporte.vue')
+    },
+    {
+        path: '/busquedaReporte',
+        name: 'BusquedaReporte',
+        component: () => import('../views/userviews/BusquedaReporte.vue'),
     },
 ]
 
