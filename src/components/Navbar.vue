@@ -4,13 +4,12 @@
             <div class="navbar-inner">
                 <div class="container">
                     <!-- logo -->
-                    <a class="brand logo" href="index.html"><img src="../assets/img/logo.png" alt=""></a>
+                    <router-link class="brand logo" to="/"><img src="../assets/img/logo.png" alt=""></router-link>
                     <!-- end logo -->
                     <!-- top menu -->
                     <div class="navigation">
                         <nav>
-                            
-                                    <router-link class="dropdown active" to="/index">Inicio</router-link>
+                                    <router-link class="dropdown active" to="/">Inicio</router-link>
                                     <router-link class="dropdown" data-step="2" data-intro="Aquí podrás encontrar todos los productos que tenemos a su disposición" to="/producto" data-position='right'>Productos</router-link>
                                     <router-link class="dropdown" to="/noticias">Noticias</router-link>
                                     <router-link class="dropdown" to="/equipo">¿Quienes somos?</router-link>
@@ -31,13 +30,10 @@
 </div>
 </template>
 <script>
+
 export default {
     name: "Navbar",
-    mounted(){
-        let recaptchaScript = document.createElement('script')
-        recaptchaScript.setAttribute('src', '../src/assets/js/jquery.min.js')
-        document.head.appendChild(recaptchaScript)
-    }
+
 }
 </script>
 <style lang="stylus" scoped>

@@ -21,13 +21,25 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <a href="MenuLogin.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Iniciar Sesion</a>
+            <a @click="login" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Iniciar Sesion</a>
         </form>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Login'
+    name: 'Login',
+    data(){
+        return{
+            usuarios:[{nombre:"Jose Carrion",usuario:"joslecar",pass:"123"},
+                    {nombre:"Omar Rosales", usuario:"omar", pass:"123"}],
+            usuarioForm:{usuario:"",pass:""}
+        }
+    },
+    methods:{
+        login(){
+
+        }
+    }
 }
 </script>
