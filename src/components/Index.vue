@@ -1,6 +1,5 @@
 <template>
 <div id="index">
-  <h1>HOLA</h1>
   <section id="intro">
     <div class="jumbotron masthead" >
       <div class="container" data-step="1" data-intro='Bienvenido a Syscompsa S.A.!!!'>
@@ -14,7 +13,7 @@
           </div>
         </div>
         <!-- end slider navigation -->
-        
+        <Carousel></Carousel>
         <div class="row">
           <div class="span12">
             <div id="slider_holder">
@@ -46,8 +45,12 @@
 </template>
 
 <script>
+import Carousel from '@/components/Carousel.vue'
 export default {
     name: 'Index',
+    components:{
+      Carousel
+    },
     data(){
         return{
 		slider:[

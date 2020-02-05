@@ -1,32 +1,23 @@
 <template>
 <div class = "cabecera">
-<div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <!-- logo -->
-                    <router-link class="brand logo" to="/"><img src="../assets/img/logo.png" alt=""></router-link>
-                    <!-- end logo -->
-                    <!-- top menu -->
-                    <div class="navigation">
-                        <nav>
-                                    <router-link class="dropdown active" to="/">Inicio</router-link>
-                                    <router-link class="dropdown" data-step="2" data-intro="Aquí podrás encontrar todos los productos que tenemos a su disposición" to="/producto" data-position='right'>Productos</router-link>
-                                    <router-link class="dropdown" to="/noticias">Noticias</router-link>
-                                    <router-link class="dropdown" to="/equipo">¿Quienes somos?</router-link>
-                                    <router-link data-step="3" data-intro="Si tienes alguna duda aquí nos podrás contactar" data-position='right' to="/contact">Contacto</router-link>
-                                    <router-link to="/login">Login</router-link>
-                                <ul class="nav topnav">
-                                <li>
-                                    <a id="startButton" class="btn btn-primary" href="javascript:void(0);">NAVEGACIÓN GUIADA</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+    <b-navbar toggleable="md" type="dark" variant="info">
+        <b-container>
+            <b-navbar-brand href="#">NavBar</b-navbar-brand>
 
-                    <!-- end menu -->
-                </div>
-            </div>
-        </div>
+            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-collapse id="nav-collapse" is-nav>
+                <b-navbar-nav>
+                    <b-nav-item to="/home">Home</b-nav-item>
+                    <b-nav-item to="/productos">Productos</b-nav-item>
+                    <b-nav-item to="/noticias">Noticias</b-nav-item>
+                    <b-nav-item to="/equipo">Quienes somos?</b-nav-item>
+                    <b-nav-item to="/contact">Contacto</b-nav-item>
+                    <b-nav-item to="/login">Login</b-nav-item>
+                </b-navbar-nav>
+            </b-collapse>
+        </b-container>   
+    </b-navbar>
+
 </div>
 </template>
 <script>
